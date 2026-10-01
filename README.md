@@ -31,4 +31,4 @@ The app accepts a numeric mark, rejects values outside 0-100, and displays an er
 
 ## Submission
 
-Capture the app in the browser with at least three different marks, include this `grade_system.py`, and upload the project to a GitHub repository.
+Browser screenshots showing marks 55, 85, and 92 are saved in [`screenshots/`](screenshots/). Include those screenshots and `grade_system.py` in the GitHub submission.
