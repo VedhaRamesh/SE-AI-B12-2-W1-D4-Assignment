@@ -2,6 +2,8 @@
 
 A Streamlit app that converts a mark from 0 to 100 into a letter grade.
 
+The assignment app is in `grade_system.py` and uses Streamlit only. `firstapi.py` is retained as a separate FastAPI example; it is not used by the grade system.
+
 ## Set up and run
 
 From this folder, create and activate a virtual environment, then install Streamlit:
