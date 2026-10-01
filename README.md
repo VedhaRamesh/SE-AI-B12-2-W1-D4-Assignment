@@ -1,15 +1,32 @@
-# Running the API
+# Student Grade System
 
-Run these commands from the assignment folder.
+A Streamlit app that converts a mark from 0 to 100 into a letter grade.
 
-## Start the server
+## Set up and run
+
+From this folder, create and activate a virtual environment, then install Streamlit:
 
 ```zsh
-apivenv/bin/python -m uvicorn firstapi:app --reload
+python3 -m venv venv
+source venv/bin/activate
+pip install streamlit
+streamlit run grade_system.py
 ```
 
-The API is available at <http://127.0.0.1:8000>.
+Open the local URL printed by Streamlit, usually <http://localhost:8501>. Stop the app with **Ctrl+C** and leave the environment with `deactivate`.
 
-## Stop the server
+## Grade scale
 
-In the terminal running Uvicorn, press **Ctrl+C**. This shuts down the server cleanly. If you suspended it with **Ctrl+Z**, run `fg` first, then press **Ctrl+C**.
+| Mark | Grade |
+| --- | --- |
+| 90-100 | A |
+| 80-89 | B |
+| 70-79 | C |
+| 60-69 | D |
+| 0-59 | E |
+
+The app accepts a numeric mark, rejects values outside 0-100, and displays an error for non-numeric input. Leaving the field blank displays no result until a mark is entered.
+
+## Submission
+
+Capture the app in the browser with at least three different marks, include this `grade_system.py`, and upload the project to a GitHub repository.
